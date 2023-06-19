@@ -8,7 +8,15 @@ is another project/component etc.
 
 - download my repo
 - run `npm install`
-- setup: **Node v16.8.0** and **npm v9.7.1**
+- setup: **Node v18.16.0** and **npm v9.5.1**
+
+### Husky config:
+- create *.husky* in main directory
+- in script in `package.json` add command `prepare: "husky install"`
+- run command `npx add .husky/pre-commit "npx lint-staged`
+- create `.prettierrc` and `.eslintrc` with your config
+- add config in `package.json` in lint-staged your config
+- now when you run commit husky check whether any file has change and automatically will lint or show error/warning
 
 ### Technologies and tools
 - Vue
@@ -16,7 +24,7 @@ is another project/component etc.
 - SASS(SCSS)
 - Eslint
 - Prettier
-- Husky
+- Husky (with lint-staged)
 
 ## Projects
 This is list of my projects with summary
