@@ -29,3 +29,5 @@ is another project/component etc.
 ## Projects
 This is list of my projects with summary
 ### Project 1 - 
+
+todo - add to package json    "./src/**/*.{vue, scss}": "stylelint --fix"
