@@ -4,7 +4,7 @@
     <RouterView />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
     * {
         font-size: 16px;
     }

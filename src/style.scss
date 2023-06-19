@@ -1,0 +1,8 @@
+@use './styles/model/_index.scss' as *;
+@import './reset.scss';
+
+body {
+    background-color: $background;
+    font-size: $font-size--base;
+    font-family: $font-family;
+}
