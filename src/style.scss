@@ -8,8 +8,7 @@ body {
     color: $text-color--dark-theme;
 }
 #app {
-    //height: 100dvh;
-    //width: 100dvw;
+    @include flex-position(column);
 }
 
 h1 {
@@ -18,9 +17,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 0.09rem;
     line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 
 p {

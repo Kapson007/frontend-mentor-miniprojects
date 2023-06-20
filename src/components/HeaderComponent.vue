@@ -23,11 +23,9 @@
 
 <style scoped lang="scss">
     .homeHeader {
-        margin-top: $margin-normal;
+        width: 100%;
         @include flex-position(column, space-around, center, 3rem);
-        text-align: center;
-        h2 {
-            width: 100vmin;
+        h1 {
             text-align: center;
         }
     }
