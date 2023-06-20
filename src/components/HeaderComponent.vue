@@ -1,18 +1,22 @@
 <template>
     <header class="homeHeader">
-        <h1>Welcome to page with my implemented projects</h1>
-        <h2>
+        <h1 class="homeHeader__title">
+            Welcome to page with my implemented projects
+        </h1>
+        <h2 class="homeHeader__description">
             Here you can find list of my implementations projects / components
             inspired by ideas from
             <a
-                id="frontendProject"
+                class="homeHeader__link"
                 href="https://www.frontendmentor.io"
                 >Frontend Mentor</a
             >
             Implementations can be quite different than on authors page but
             logically are the same. If you want rate or review projects please
             visit my repo on my
-            <a href="https://github.com/Kapson007/frontend-mentor-miniprojects"
+            <a
+                class="homeHeader__link"
+                href="https://github.com/Kapson007/frontend-mentor-miniprojects"
                 >Github</a
             >.
         </h2>
@@ -25,8 +29,26 @@
     .homeHeader {
         width: 100%;
         @include flex-position(column, space-around, center, 3rem);
-        h1 {
+        &__title {
             text-align: center;
+        }
+        &__description {
+            font-size: 1.8rem;
+            letter-spacing: 0.09rem;
+            line-height: 1.5;
+        }
+        &__link {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $text-color;
+                background-color: $accent-color--secondary;
+                border-radius: $border-radius;
+            }
+            &:focus-visible,
+            &:focus {
+                outline: $border-width--thin dashed $accent-color;
+                outline-offset: 0.2rem;
+            }
         }
     }
 </style>

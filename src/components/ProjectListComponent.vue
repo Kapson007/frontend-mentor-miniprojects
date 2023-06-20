@@ -10,9 +10,8 @@
     .project-list {
         height: 50dvh;
         width: 100%;
-
         &__header {
-            text-decoration: underline;
+            font-size: 2rem;
         }
     }
 </style>
