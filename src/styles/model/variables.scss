@@ -2,11 +2,19 @@
 // color aspect
 
 $text-color: #000;
+$text-color--dark-theme: #eaeaea;
 $background: #fff;
+$background--dark-theme: #0d0c0c;
 $primary-button: #75d790;
 $secondary-button: #ebf1ff;
 $accent-color: #ff8f94;
+$accent-color--secondary: #d6cc1a;
 
 // font aspect
 $font-family: 'Poppins', Helvetica, Arial, sans-serif;
 $font-size--base: 16px;
+
+// paddings and margins
+$padding-normal: 1rem;
+$margin-normal: 1rem;
+$margin-huge: 3rem;

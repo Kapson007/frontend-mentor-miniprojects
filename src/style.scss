@@ -2,7 +2,41 @@
 @import './reset.scss';
 
 body {
-    background-color: $background;
+    background-color: $background--dark-theme;
     font-size: $font-size--base;
     font-family: $font-family;
+    color: $text-color--dark-theme;
+}
+#app {
+    //height: 100dvh;
+    //width: 100dvw;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+}
+
+a {
+    color: $accent-color--secondary;
+    background: none;
+
+    &:visited {
+        color: $accent-color;
+    }
+
+    &:not(:visited) {
+        color: $accent-color--secondary;
+    }
 }
