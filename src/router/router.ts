@@ -14,4 +14,5 @@ export default createRouter({
             component: NewsletterFormView,
         },
     ],
+    linkActiveClass: 'active-link',
 })
