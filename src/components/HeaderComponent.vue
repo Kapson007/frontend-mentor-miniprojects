@@ -24,15 +24,16 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
+    @use '../styles/newsletterFormStyles/_newsletterForm-index' as *;
     .homeHeader {
         width: 100%;
-        @include flex-position(column, space-around, center, 1.5rem);
+        @include flex-position(column, space-around, center, 1.8rem);
         &__title {
             text-align: center;
-            line-height: 1.5;
+            line-height: 1.2;
         }
         &__description {
-            font-size: 1.1rem;
+            font-size: $font-size--base;
             letter-spacing: 0.09rem;
             line-height: 1.5;
         }
@@ -46,6 +47,15 @@
             &:focus-visible,
             &:focus {
                 @include outline($width: $border-width--thin, $offset: 0.2rem);
+            }
+        }
+        @media screen and (min-width: $tablet-breakpoint) {
+            &__title {
+                font-size: 2.5rem;
+            }
+            &__description {
+                font-size: $font-size--medium;
+                letter-spacing: 0.1rem;
             }
         }
     }

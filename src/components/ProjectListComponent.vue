@@ -14,16 +14,17 @@
 <script lang="ts"></script>
 
 <style scoped lang="scss">
+    @use '../styles/newsletterFormStyles/_newsletterForm-index' as *;
     .project-list {
         width: 100%;
         @include flex-position(column, flex-start, flex-start, 2rem);
         &__header {
-            font-size: 2rem;
+            font-size: $font-size--medium;
         }
         &__list {
             list-style-position: inside;
             list-style-type: none;
-            font-size: $font-size--medium;
+            font-size: $font-size--base;
             .project-item {
                 transition: all 0.1s ease;
                 a:visited {
@@ -42,6 +43,14 @@
                     font-weight: $font-weight-bold;
                     margin-right: $padding-normal;
                 }
+            }
+        }
+        @media screen and (min-width: $tablet-breakpoint) {
+            &__header {
+                font-size: $font-size--large;
+            }
+            &__list {
+                font-size: $font-size--medium;
             }
         }
     }
