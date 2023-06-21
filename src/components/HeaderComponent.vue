@@ -4,8 +4,8 @@
             Welcome to page with my implemented projects
         </h1>
         <h2 class="homeHeader__description">
-            Here you can find list of my implementations projects / components
-            inspired by ideas from
+            Here you can find list of my projects
+            implementations&nbsp;/&nbsp;components inspired by ideas from
             <a
                 class="homeHeader__link"
                 href="https://www.frontendmentor.io"
@@ -38,7 +38,7 @@
             line-height: 1.5;
         }
         &__link {
-            transition: all 0.3s ease-in-out;
+            transition: all 0.1s ease;
             &:hover {
                 color: $text-color;
                 background-color: $accent-color--secondary;
@@ -46,8 +46,7 @@
             }
             &:focus-visible,
             &:focus {
-                outline: $border-width--thin dashed $accent-color;
-                outline-offset: 0.2rem;
+                @include outline($width: $border-width--thin, $offset: 0.2rem);
             }
         }
     }

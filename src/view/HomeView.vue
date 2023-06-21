@@ -1,8 +1,9 @@
 <template>
     <div class="homeWrapper">
         <header-component />
-        <main class="projects"></main>
-        <project-list-component />
+        <main class="homeWrapper__projects">
+            <project-list-component />
+        </main>
     </div>
 </template>
 
@@ -17,5 +18,9 @@
         height: 100dvh;
         width: 70dvw;
         padding-inline: $padding-normal;
+
+        &__projects {
+            width: 100%;
+        }
     }
 </style>
