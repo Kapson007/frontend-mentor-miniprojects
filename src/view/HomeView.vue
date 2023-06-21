@@ -16,8 +16,7 @@
     .homeWrapper {
         @include flex-position(column, space-evenly, center);
         height: 100dvh;
-        width: 70dvw;
-        padding-inline: $padding-normal;
+        width: 80dvw;
 
         &__projects {
             width: 100%;

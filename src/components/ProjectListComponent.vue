@@ -15,8 +15,6 @@
 
 <style scoped lang="scss">
     .project-list {
-        height: 50dvh;
-
         width: 100%;
         @include flex-position(column, flex-start, flex-start, 2rem);
         &__header {
@@ -43,13 +41,6 @@
                     font-size: inherit;
                     font-weight: $font-weight-bold;
                     margin-right: $padding-normal;
-                }
-                &::marker {
-                    //content: ">";
-                    //color: $accent-color--secondary;
-                    //font-size: inherit;
-                    //font-weight: $font-weight-bold;
-                    //margin-right: $padding-normal;
                 }
             }
         }

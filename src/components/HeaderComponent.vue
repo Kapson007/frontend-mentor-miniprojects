@@ -1,8 +1,6 @@
 <template>
     <header class="homeHeader">
-        <h1 class="homeHeader__title">
-            Welcome to page with my implemented projects
-        </h1>
+        <h1 class="homeHeader__title">Welcome to page with my&nbsp;projects</h1>
         <h2 class="homeHeader__description">
             Here you can find list of my projects
             implementations&nbsp;/&nbsp;components inspired by ideas from
@@ -28,12 +26,13 @@
 <style scoped lang="scss">
     .homeHeader {
         width: 100%;
-        @include flex-position(column, space-around, center, 3rem);
+        @include flex-position(column, space-around, center, 1.5rem);
         &__title {
             text-align: center;
+            line-height: 1.5;
         }
         &__description {
-            font-size: 1.8rem;
+            font-size: 1.1rem;
             letter-spacing: 0.09rem;
             line-height: 1.5;
         }
