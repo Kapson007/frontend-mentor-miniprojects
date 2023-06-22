@@ -27,3 +27,15 @@
         outline-width: $width;
     }
 }
+
+@mixin header-style(
+    $size: 2rem,
+    $color: $text-color,
+    $weight: 600,
+    $let-spacing: 0.09rem
+) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    letter-spacing: $let-spacing;
+}

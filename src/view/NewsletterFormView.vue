@@ -13,6 +13,6 @@
 <style scoped lang="scss">
     .newsletterFormView {
         height: 100dvh;
-        width: 100dvw;
+        @include flex-position(column, flex-start, flex-start, 1rem);
     }
 </style>

@@ -16,4 +16,8 @@
     ]
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+    .subscriptionBenefits {
+        padding: 0 2rem;
+    }
+</style>

@@ -8,4 +8,16 @@
     defineProps({ benefit: { type: String, required: true } })
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+    @use '/src/styles/newsletterFormStyles/newsletterForm-index' as newsletter;
+    .benefitList__benefitBulletPoint {
+        color: newsletter.$charcoal-grey;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        &::before {
+            content: url('/public/newsletterFormAssets/icon-list.svg');
+            position: absolute;
+            left: 5%;
+        }
+    }
+</style>
