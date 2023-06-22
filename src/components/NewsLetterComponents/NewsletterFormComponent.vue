@@ -31,7 +31,7 @@
             margin-top: 1rem;
             @include flex-position(column, space-evenly, flex-start, 0.8rem);
             height: 40%;
-            padding: 0 $padding-large;
+            padding: 0 2rem;
 
             .description {
                 position: relative;

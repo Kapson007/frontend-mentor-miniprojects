@@ -17,7 +17,7 @@
         &::before {
             content: url('/public/newsletterFormAssets/icon-list.svg');
             position: absolute;
-            left: 5%;
+            left: 8%;
         }
     }
 </style>
