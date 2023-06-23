@@ -30,6 +30,7 @@
     .newsletterForm {
         width: 100%;
         height: 100%;
+        margin-top: 2rem;
         @include flex-position(column, center, center, 1.5rem);
         .formAction {
             @include flex-position(column, center, flex-start, 0.5rem);
@@ -45,12 +46,8 @@
             &__inputField {
                 box-sizing: border-box;
                 display: inline-block;
-                width: 100%;
-                height: 3.5rem;
-                padding: 0.75rem;
                 color: newsletter.$charcoal-grey;
                 border: solid $border-width--thin newsletter.$grey--light;
-                border-radius: $border-radius;
 
                 &::placeholder {
                     color: newsletter.$grey;
@@ -59,8 +56,20 @@
                 }
             }
         }
+        &__submit,
+        .formAction__inputField {
+            width: 100%;
+            height: 3.5rem;
+            padding: 0.75rem;
+            border-radius: $border-radius;
+            font-size: 0.9rem;
+        }
         &__submit {
             width: 100%;
+            background-color: newsletter.$dark-slate-grey;
+            color: newsletter.$white;
+            font-weight: 600;
+            letter-spacing: 0.02rem;
         }
     }
 </style>
