@@ -9,12 +9,14 @@
                 Join 60,000+ product managers receiving monthly updates on:
             </h6>
             <benefit-list-component />
+            <form-component />
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
     import BenefitListComponent from './BenefitListComponent.vue'
+    import FormComponent from './FormComponent.vue'
 </script>
 
 <style scoped lang="scss">
@@ -27,9 +29,9 @@
         }
 
         &__description {
-            margin-top: 1rem;
-            @include flex-position(column, space-evenly, flex-start, 0.8rem);
-            height: 40%;
+            margin-top: 3rem;
+            @include flex-position(column, space-evenly, flex-start, 1rem);
+            height: 50%;
             padding: 0 2rem;
 
             .description {

@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
     import BackMenuComponent from '../components/BackMenuComponent.vue'
-    import NewsletterFormComponent from '../components/NewsLetterComponents/NewsletterFormComponent.vue'
+    import NewsletterFormComponent from '../components/NewsLetterComponents/NewsletterComponent.vue'
 </script>
 
 <style scoped lang="scss">
