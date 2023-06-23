@@ -22,7 +22,6 @@
     .newsletterFormLayout {
         background-color: newsletter.$white;
         height: 100%;
-
         &__banner {
             width: 100%;
         }

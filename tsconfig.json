@@ -27,6 +27,7 @@
     "src/**/*.vue",
     "node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
     "node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+    "node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
     "node_modules/@vue/runtime-core/dist/runtime-core.d.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]

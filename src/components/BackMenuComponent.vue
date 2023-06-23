@@ -10,6 +10,7 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
+    @use 'src/styles/newsletterFormStyles/newsletterForm-index' as newsletter;
     .backNavigation {
         @include flex-position(
             $justify: flex-start,
@@ -17,6 +18,7 @@
             $gap: 0.5rem
         );
         margin: 1rem 1rem 0 1rem;
+        @include header-style(2.25rem, $text-color--dark-theme, 600, 0.03rem);
         & > a {
             position: relative;
             top: 0.125rem;
@@ -30,6 +32,7 @@
             font-weight: $font-weight-bold;
             cursor: pointer;
             transition: color 0.3s ease;
+            color: $text-color--dark-theme;
             &:visited {
                 color: $text-color--dark-theme;
             }
