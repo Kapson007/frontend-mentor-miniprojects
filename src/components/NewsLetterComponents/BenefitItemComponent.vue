@@ -13,10 +13,7 @@
         color: newsletter.$charcoal-grey;
         font-size: 0.9rem;
         line-height: 1.2;
-        &::before {
-            content: url('/newsletterFormAssets/icon-list.svg');
-            position: absolute;
-            left: 8%;
-        }
+        list-style-image: url('/newsletterFormAssets/icon-list.svg');
+        padding-inline-start: 1ch;
     }
 </style>
