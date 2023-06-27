@@ -3,14 +3,25 @@
         action=""
         class="newsletterForm">
         <div class="newsletterForm__formAction formAction">
-            <label
-                for="emailField"
-                class="formAction__inputLabel"
-                >Email address</label
-            >
+            <div class="actionLabel">
+                <label
+                    for="emailField"
+                    class="formAction__inputLabel"
+                    >Email address</label
+                >
+                <span
+                    v-show="showErrorMessage"
+                    :class="{ error: showErrorMessage }"
+                    class="formAction__errorMessage"
+                    >Valid email required</span
+                >
+            </div>
+
             <input
+                v-model="userMail"
                 id="emailField"
                 class="formAction__inputField"
+                :class="{ error: showErrorMessage }"
                 type="email"
                 placeholder="email@company.com"
                 required />
@@ -23,14 +34,19 @@
     </form>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+    import { ref } from 'vue'
+
+    // const emailRegex: RegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const userMail = ref('')
+    // const showErrorMessage = computed<boolean>(() => (userMail.value.length > 12 && !emailRegex.test(userMail.value)));
+</script>
 
 <style scoped lang="scss">
     @use '/src/styles/newsletterFormStyles/newsletterForm-index' as newsletter;
     .newsletterForm {
         width: 100%;
         height: 100%;
-        margin-top: 2rem;
         @include flex-position(column, center, center, 1.5rem);
         .formAction {
             @include flex-position(column, center, flex-start, 0.5rem);
@@ -42,6 +58,9 @@
                     600,
                     0rem
                 );
+            }
+            &__errorMessage {
+                @include header-style(0.7rem, $error-message, 600, 0rem);
             }
             &__inputField {
                 box-sizing: border-box;
@@ -55,6 +74,10 @@
                     letter-spacing: 0.05rem;
                 }
             }
+            .actionLabel {
+                width: 100%;
+                @include flex-position(row, space-between, center);
+            }
         }
         &__submit,
         .formAction__inputField {
@@ -63,6 +86,11 @@
             padding: 0.75rem;
             border-radius: $border-radius;
             font-size: 0.9rem;
+            &.error {
+                color: $error-message;
+                background-color: #fcd9dc;
+                border-color: $error-message;
+            }
         }
         &__submit {
             width: 100%;
