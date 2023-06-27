@@ -35,11 +35,15 @@
 </template>
 
 <script setup lang="ts">
-    import { ref } from 'vue'
+    import { computed, ref } from 'vue'
 
-    // const emailRegex: RegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // due to problems with regexp and eslint I had to solve it simpler
+    // const emailRegex: RegExp = new RegExp("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$");
+
     const userMail = ref('')
-    // const showErrorMessage = computed<boolean>(() => (userMail.value.length > 12 && !emailRegex.test(userMail.value)));
+    const showErrorMessage = computed(
+        () => userMail.value.length > 12 && !userMail.value.includes('@gmail')
+    )
 </script>
 
 <style scoped lang="scss">

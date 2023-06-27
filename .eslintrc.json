@@ -6,17 +6,27 @@
   "extends": [
     "plugin:vue/vue3-essential",
     "standard",
-    "prettier"
+    "prettier",
+    "plugin:regexp/recommended"
   ],
   "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "no-useless-escape": "off"
+      }
+    }
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": [
-    "vue"
+    "vue",
+    "eslint-comments",
+    "regexp"
   ],
   "rules": {
+    "no-useless-escape": "off"
   }
 }
