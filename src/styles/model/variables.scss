@@ -9,12 +9,25 @@ $primary-button: #75d790;
 $secondary-button: #ebf1ff;
 $accent-color: #ff8f94;
 $accent-color--secondary: #d6cc1a;
+$error-message: #ea2626;
 
 // font aspect
 $font-family: 'Poppins', Helvetica, Arial, sans-serif;
+$font-size--small: 0.8rem;
 $font-size--base: 16px;
+$font-size--medium: 1.5rem;
+$font-size--large: 2rem;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
 
 // paddings and margins
 $padding-normal: 1rem;
+$padding-large: 1.5rem;
 $margin-normal: 1rem;
 $margin-huge: 3rem;
+
+// border
+$border-width--thin: 0.125rem;
+$border-width--normal: 0.3rem;
+
+$border-radius: 0.5rem;

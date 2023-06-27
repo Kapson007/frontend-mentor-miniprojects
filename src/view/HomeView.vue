@@ -1,8 +1,9 @@
 <template>
     <div class="homeWrapper">
         <header-component />
-        <main class="projects"></main>
-        <project-list-component />
+        <main class="homeWrapper__projects">
+            <project-list-component />
+        </main>
     </div>
 </template>
 
@@ -15,7 +16,10 @@
     .homeWrapper {
         @include flex-position(column, space-evenly, center);
         height: 100dvh;
-        width: 70dvw;
-        padding-inline: $padding-normal;
+        width: 80dvw;
+
+        &__projects {
+            width: 100%;
+        }
     }
 </style>

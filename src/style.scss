@@ -1,4 +1,5 @@
 @use './styles/model/_index.scss' as *;
+@use './styles/newsletterFormStyles/_newsletterForm-index' as newsletter;
 @import './reset.scss';
 
 body {
@@ -6,29 +7,30 @@ body {
     font-size: $font-size--base;
     font-family: $font-family;
     color: $text-color--dark-theme;
+    box-sizing: border-box;
 }
 #app {
     @include flex-position(column);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     letter-spacing: 0.1rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0.09rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 0.05rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.02rem;
 }
 

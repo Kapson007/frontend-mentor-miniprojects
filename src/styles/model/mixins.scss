@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @mixin flex-position(
     $direction: row,
     $justify: center,
@@ -9,4 +11,31 @@
     justify-content: $justify;
     align-items: $align-items;
     gap: $gap;
+}
+
+@mixin outline(
+    $style: dashed,
+    $color: $accent-color,
+    $width: 0,
+    $offset: 0.5rem,
+    $outline-radius: 0rem
+) {
+    outline: $style $color;
+    outline-offset: $offset;
+    border-radius: $outline-radius;
+    @if $width > 0 {
+        outline-width: $width;
+    }
+}
+
+@mixin header-style(
+    $size: 2rem,
+    $color: $text-color,
+    $weight: 600,
+    $let-spacing: 0.09rem
+) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    letter-spacing: $let-spacing;
 }
