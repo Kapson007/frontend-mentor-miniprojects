@@ -2,7 +2,7 @@
     <section class="newsletterFormLayout">
         <img
             class="newsletterFormLayout__banner"
-            src="public/newsletterFormAssets/illustration-sign-up-mobile.svg" />
+            src="/newsletterFormAssets/illustration-sign-up-mobile.svg" />
         <div class="newsletterFormLayout__description description">
             <h1 class="description__title">Stay updated!</h1>
             <h6 class="description__advert">

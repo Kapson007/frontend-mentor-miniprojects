@@ -14,7 +14,7 @@
         font-size: 0.9rem;
         line-height: 1.2;
         &::before {
-            content: url('/public/newsletterFormAssets/icon-list.svg');
+            content: url('/newsletterFormAssets/icon-list.svg');
             position: absolute;
             left: 8%;
         }

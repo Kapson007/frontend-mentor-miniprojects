@@ -70,6 +70,24 @@
             color: newsletter.$white;
             font-weight: 600;
             letter-spacing: 0.02rem;
+            transition: all 0.2s ease;
+
+            &:active,
+            &:focus-visible,
+            &:hover {
+                background: linear-gradient(
+                    to right,
+                    newsletter.$primary-pink 5%,
+                    newsletter.$primary-tomato-red,
+                    newsletter.$primary-tomato-red
+                );
+                border: none;
+                box-shadow: 0 0.5rem 1.5rem
+                    lighten(newsletter.$primary-tomato-red, 20%);
+            }
+            &:focus {
+                @include outline($outline-radius: $border-radius);
+            }
         }
     }
 </style>
